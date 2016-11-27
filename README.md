@@ -7,6 +7,7 @@ Detects and fixes instances of stringly-typing!
 
 [What's does it mean to be stringly typed?][stringly-typed]
 
+
 [stringly-typed]: http://wiki.c2.com/?StringlyTyped
 
 ## Installation
@@ -43,16 +44,12 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "stringly-typing/rule-name": 2
+        "stringly-typing/no-bare-url": "error"
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
-
-
-
-
+* [stringly-typing/no-bare-url](docs/rules/no-bare-url.md): Prevent usage of bare URLs
 
