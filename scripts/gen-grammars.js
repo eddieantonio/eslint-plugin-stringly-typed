@@ -36,8 +36,9 @@ const peg = require('pegjs');
 const OUT_DIR = `${__dirname}/../lib/grammars`;
 
 const source = peg.generate(corePeg('ietf/rfc3986-uri'), {
-  allowedStartRules: ['absolue_URI'],
-  output: "source"
+  allowedStartRules: ['URI'],
+  output: "source",
+  format: "commonjs"
 });
 
 writeFileSync(`${OUT_DIR}/uri.js`, source);
