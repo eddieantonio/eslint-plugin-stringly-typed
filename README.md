@@ -1,4 +1,7 @@
-# eslint-plugin-stringly-typing
+ESLint-plugin-stringly-typing
+=============================
+
+[![Build Status](https://travis-ci.org/eddieantonio/eslint-plugin-stringly-typing.svg?branch=master)](https://travis-ci.org/eddieantonio/eslint-plugin-stringly-typing)
 
 Detects and fixes instances of stringly-typing!
 

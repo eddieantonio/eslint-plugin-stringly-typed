@@ -12,7 +12,8 @@
   "author": "Eddie Antonio Santos <easantos@ualberta.ca>",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "mocha tests --recursive",
+    "dev": "mocha tests --watch --recursive"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
