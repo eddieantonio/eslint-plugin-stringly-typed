@@ -1,4 +1,4 @@
-# Prevent usage of bare URIs (no-bare-uri)
+# Prevent usage of bare URLs (no-bare-url)
 
 Please describe the origin of the rule here.
 
