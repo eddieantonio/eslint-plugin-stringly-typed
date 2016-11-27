@@ -29,7 +29,7 @@
 
 "use strict";
 
-const {writeFileSync} = require('fs');
+const fs = require('fs');
 const corePeg = require('core-pegjs');
 const peg = require('pegjs');
 
@@ -41,4 +41,4 @@ const source = peg.generate(corePeg('ietf/rfc3986-uri'), {
   format: "commonjs"
 });
 
-writeFileSync(`${OUT_DIR}/uri.js`, source);
+fs.writeFileSync(`${OUT_DIR}/uri.js`, source);
