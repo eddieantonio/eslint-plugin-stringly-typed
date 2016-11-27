@@ -3,6 +3,9 @@ module.exports = {
   "env": {
     "node": true
   },
+  'parserOptions': {
+    'ecmaVersion': 2015,
+  },
   'rules': {
     'indent': [
       'error',
@@ -15,7 +18,7 @@ module.exports = {
     'no-unused-vars': [
       'error', {
         'vars': 'all',
-        'argsIgnorePattern': '^_' 
+        'argsIgnorePattern': '^_'
       }
     ],
     'semi': [

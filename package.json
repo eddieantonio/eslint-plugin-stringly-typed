@@ -13,14 +13,18 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive",
-    "dev": "mocha tests --watch --recursive"
+    "prepublish": "npm run gen-grammars",
+    "dev": "mocha tests --watch --recursive",
+    "gen-grammars": "scripts/gen-grammars.js"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
+    "core-pegjs": "^0.7.5",
     "eslint": "~2.6.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "pegjs": "^0.10.0"
   },
   "peerDependencies": {
     "eslint": ">=0.8.0"
