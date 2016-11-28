@@ -23,7 +23,8 @@ var ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
 ruleTester.run("no-bare-url", rule, {
 
   valid: [
-    "var url = URL`https://example.org/?q=foo#bar`;"
+    "var url = URL`https://example.org/?q=foo#bar`;",
+    "var url = URL`mailto://nobody@example.org`;"
   ],
 
   invalid: [
