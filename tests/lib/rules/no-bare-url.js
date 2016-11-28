@@ -29,7 +29,7 @@ ruleTester.run("no-bare-url", rule, {
     {
       code: "var url = \"https://example.org/?q=foo#bar\";",
       errors: [{
-        message: "Unexpected bare URL: ",
+        message: "Unexpected bare URL: https://example.org/?q=foo#bar",
         type: "Literal"
       }],
       output: "var url = URL`https://example.org/?q=foo#bar`;"
@@ -37,7 +37,7 @@ ruleTester.run("no-bare-url", rule, {
     {
       code: "var url = `https://example.org/?q=foo#bar`;",
       errors: [{
-        message: "Unexpected bare URL: ",
+        message: "Unexpected bare URL: https://example.org/?q=foo#bar",
         type: "TemplateLiteral"
       }],
       output: "var url = URL`https://example.org/?q=foo#bar`;"
@@ -45,9 +45,10 @@ ruleTester.run("no-bare-url", rule, {
     {
       code: "var url = Foo`https://example.org/?q=foo#bar`;",
       errors: [{
-        message: "Unexpected bare URL: ",
+        message: "Unexpected bare URL: https://example.org/?q=foo#bar",
         type: "TemplateLiteral"
       }],
+      /* Cannot safely fix this example... */
       output: "var url = Foo`https://example.org/?q=foo#bar`;"
     }
   ]
