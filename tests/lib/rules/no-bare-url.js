@@ -32,29 +32,23 @@ ruleTester.run("no-bare-url", rule, {
         message: "Unexpected bare URL: ",
         type: "Literal"
       }],
-      /*
       output: "var url = URL`https://example.org/?q=foo#bar`;"
-      */
     },
     {
       code: "var url = `https://example.org/?q=foo#bar`;",
       errors: [{
         message: "Unexpected bare URL: ",
         type: "TemplateLiteral"
-      }]
-      /*
+      }],
       output: "var url = URL`https://example.org/?q=foo#bar`;"
-      */
     },
     {
       code: "var url = Foo`https://example.org/?q=foo#bar`;",
       errors: [{
         message: "Unexpected bare URL: ",
         type: "TemplateLiteral"
-      }]
-      /*
+      }],
       output: "var url = Foo`https://example.org/?q=foo#bar`;"
-      */
     }
   ]
 });
