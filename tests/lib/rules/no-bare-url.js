@@ -40,6 +40,13 @@ ruleTester.run("no-bare-url", rule, {
         message: "Unexpected bare URL: ",
         type: "TemplateLiteral"
       }]
+    },
+    {
+      code: "var url = Foo`https://example.org/?q=foo#bar`;",
+      errors: [{
+        message: "Unexpected bare URL: ",
+        type: "TemplateLiteral"
+      }]
     }
   ]
 });
