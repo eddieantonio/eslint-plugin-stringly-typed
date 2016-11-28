@@ -21,19 +21,20 @@ var rule = require("../../../lib/rules/no-bare-url"),
 var ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
 
 ruleTester.run("no-bare-url", rule, {
-
   valid: [
     "var url = URL`https://example.org/?q=foo#bar`;",
     "var url = URL`mailto://nobody@example.org`;"
   ],
-
   invalid: [
     {
       code: "var url = \"https://example.org/?q=foo#bar\";",
       errors: [{
         message: "Unexpected bare URL: ",
         type: "Literal"
-      }]
+      }],
+      /*
+      output: "var url = URL`https://example.org/?q=foo#bar`;"
+      */
     },
     {
       code: "var url = `https://example.org/?q=foo#bar`;",
@@ -41,6 +42,9 @@ ruleTester.run("no-bare-url", rule, {
         message: "Unexpected bare URL: ",
         type: "TemplateLiteral"
       }]
+      /*
+      output: "var url = URL`https://example.org/?q=foo#bar`;"
+      */
     },
     {
       code: "var url = Foo`https://example.org/?q=foo#bar`;",
@@ -48,6 +52,9 @@ ruleTester.run("no-bare-url", rule, {
         message: "Unexpected bare URL: ",
         type: "TemplateLiteral"
       }]
+      /*
+      output: "var url = Foo`https://example.org/?q=foo#bar`;"
+      */
     }
   ]
 });

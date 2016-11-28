@@ -1,5 +1,8 @@
 # Prevent usage of bare URLs (no-bare-url)
 
+(fixable) The `--fix` option on the [command line][] automatically fixes
+problems reported by this rule.
+
 URLs encode a large amount of attributes:
 
  - a scheme
@@ -59,3 +62,4 @@ structure of URLs.
 [Node's URL Module]: https://nodejs.org/api/url.html
 [URL Tagged Template]: https://github.com/eddieantonio/url-tagged-template
 [RFC3986]: https://www.ietf.org/rfc/rfc3986.txt
+[command line]: http://eslint.org/docs/user-guide/command-line-interface#fix
