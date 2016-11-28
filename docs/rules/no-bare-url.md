@@ -57,8 +57,8 @@ structure of URLs.
  - [Node's URL Module]
  - [URL Tagged Template]
 
-[Rule source]: https://github.com/eddieantonio/eslint-plugin-stringly-typing/blob/master/lib/rules/no-bare-url.js
-[Document source]: https://github.com/eddieantonio/eslint-plugin-stringly-typing/blob/master/docs/rules/no-bare-url.md
+[Rule source]: https://github.com/eddieantonio/eslint-plugin-stringly-typed/blob/master/lib/rules/no-bare-url.js
+[Document source]: https://github.com/eddieantonio/eslint-plugin-stringly-typed/blob/master/docs/rules/no-bare-url.md
 [Node's URL Module]: https://nodejs.org/api/url.html
 [URL Tagged Template]: https://github.com/eddieantonio/url-tagged-template
 [RFC3986]: https://www.ietf.org/rfc/rfc3986.txt

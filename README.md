@@ -1,9 +1,9 @@
-ESLint-plugin-stringly-typing
+ESLint-plugin-stringly-typed
 =============================
 
-[![Build Status](https://travis-ci.org/eddieantonio/eslint-plugin-stringly-typing.svg?branch=master)](https://travis-ci.org/eddieantonio/eslint-plugin-stringly-typing)
+[![Build Status](https://travis-ci.org/eddieantonio/eslint-plugin-stringly-typed.svg?branch=master)](https://travis-ci.org/eddieantonio/eslint-plugin-stringly-typed)
 
-Detects and fixes instances of stringly-typing!
+Detects and fixes instances of stringly-typed!
 
 [What's does it mean to be stringly typed?][stringly-typed]
 
@@ -18,22 +18,22 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-stringly-typing`:
+Next, install `eslint-plugin-stringly-typed`:
 
 ```
-$ npm install eslint-plugin-stringly-typing --save-dev
+$ npm install eslint-plugin-stringly-typed --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-stringly-typing` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-stringly-typed` globally.
 
 ## Usage
 
-Add `stringly-typing` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `stringly-typed` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "stringly-typing"
+        "stringly-typed"
     ]
 }
 ```
@@ -44,12 +44,12 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "stringly-typing/no-bare-url": "error"
+        "stringly-typed/no-bare-url": "error"
     }
 }
 ```
 
 ## Supported Rules
 
-* [stringly-typing/no-bare-url](docs/rules/no-bare-url.md): Prevent usage of bare URLs
+* [stringly-typed/no-bare-url](docs/rules/no-bare-url.md): Prevent usage of bare URLs
 

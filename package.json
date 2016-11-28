@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-stringly-typing",
-  "version": "0.2.1",
+  "name": "eslint-plugin-stringly-typed",
+  "version": "0.3.0",
   "description": "Detects and fixes instances of stringly-typing",
   "keywords": [
     "eslint",
@@ -34,11 +34,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:eddieantonio/eslint-plugin-stringly-typing.git"
+    "url": "git@github.com:eddieantonio/eslint-plugin-stringly-typed.git"
   },
   "bugs": {
-    "url": "https://github.com/eddieantonio/eslint-plugin-stringly-typing/issues"
+    "url": "https://github.com/eddieantonio/eslint-plugin-stringly-typed/issues"
   },
-  "homepage": "https://github.com/eddieantonio/eslint-plugin-stringly-typing",
+  "homepage": "https://github.com/eddieantonio/eslint-plugin-stringly-typed",
   "license": "MIT"
 }
