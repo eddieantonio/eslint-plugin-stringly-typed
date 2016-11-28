@@ -18,12 +18,12 @@ var rule = require("../../../lib/rules/no-bare-url"),
 // Tests
 //------------------------------------------------------------------------------
 
-var ruleTester = new RuleTester();
+var ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
+
 ruleTester.run("no-bare-url", rule, {
 
   valid: [
-
-    // TODO: give me some code that won't trigger a warning
+    "var url = URL`https://example.org/?q=foo#bar`;"
   ],
 
   invalid: [
@@ -32,6 +32,13 @@ ruleTester.run("no-bare-url", rule, {
       errors: [{
         message: "Unexpected bare URL: ",
         type: "Literal"
+      }]
+    },
+    {
+      code: "var url = `https://example.org/?q=foo#bar`;",
+      errors: [{
+        message: "Unexpected bare URL: ",
+        type: "TemplateLiteral"
       }]
     }
   ]
