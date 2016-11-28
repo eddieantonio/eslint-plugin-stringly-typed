@@ -27,7 +27,7 @@
     "pegjs": "^0.10.0"
   },
   "peerDependencies": {
-    "eslint": ">=0.8.0"
+    "eslint": "^2.0.0 || ^3.0.0"
   },
   "engines": {
     "node": ">=0.10.0"
